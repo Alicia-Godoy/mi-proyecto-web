@@ -60,12 +60,13 @@ img{
 }
 
 .boton{
-    background-color: rgba(230, 176, 59, 0.836);
+    background-image: linear-gradient(to left, rgb(65, 196, 65),rgb(238, 235, 75));
     border: 1px solid ;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
     color: rgba(27, 57, 228, 0.521);
+    transition: all 2s;
 }
 /*media query tablet*/
 @media screen and (max-widh:760px) { 
@@ -93,4 +94,8 @@ img{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.boton:hover{
+    transform: scale(1.1);
 }
