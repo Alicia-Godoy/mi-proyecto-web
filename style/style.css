@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family:'Arenas movedizas', sans-serif;
+    color:rgb(15, 115, 148) ;
+}
+
+/*Rem*/
+html{
+    font-size: 15px;
+}
+
+/*Image responsive*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Menu y footer*/
+.menu-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(43, 148, 233);
+    background-image: url("../img/protector-bucal_servicios.jpg") ;
+    font-size: 1.5em;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*Grilla catalogo*/
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*Estilo tarjeta catalogo*/
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    background-color: rgba(178, 182, 206, 0.274);
+    gap: 20px;
+    border-radius: 3opx;
+    overflow: hidden;
+}
+.tarjeta1{
+    display: flex;
+    border: 30px;
+    background-color: aqua;
+    flex-direction: column;
+    color: blue;
+
+}
+
+.boton{
+    background-color: rgba(230, 176, 59, 0.836);
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgba(27, 57, 228, 0.521);
+}
+/*media query tablet*/
+@media screen and (max-widh:760px) { 
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-footer{
+        flex-direction: column;
+    }
+} 
+/*Media query mobile*/
+@media screen and (max-width: 365px) {
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu-footer{
+        flex-direction: column;
+    }
+}
+/*media query desktop*/
+@media screen and (min-width: 761px) {
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
